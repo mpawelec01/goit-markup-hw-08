@@ -1,0 +1,13 @@
+.footer {
+  background-color: map-get($themeColors, "background");
+  padding-bottom: 60px;
+
+  &__blocks {
+    display: flex;
+    flex-direction: row;
+  }
+  &__link {
+    display: flex;
+    padding-top: 60px;
+  }
+}

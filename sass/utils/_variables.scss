@@ -1,0 +1,14 @@
+$themeColors: (
+  "primary": #2196f3,
+  "secondary": #fff,
+  "background": #2f303a,
+  "text": #212121,
+  "project": #757575,
+  "filter": #f5f4fa,
+  "contact-footer": #ffffff99,
+  "logo": #000,
+);
+
+@function getColor($key) {
+  @return map-get($themeColors, $key);
+}

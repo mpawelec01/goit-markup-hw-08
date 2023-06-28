@@ -1,0 +1,19 @@
+.header {
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 30px;
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}

@@ -1,0 +1,24 @@
+.logo {
+  &__footer {
+    color: map-get($themeColors, "secondary");
+    font-family: "Raleway";
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  &__footer--first-part {
+    color: map-get($themeColors, "primary");
+  }
+  &__header {
+    color: map-get($themeColors, "logo");
+    font-family: "Raleway";
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  &__header--first-part {
+    color: map-get($themeColors, "primary");
+  }
+}

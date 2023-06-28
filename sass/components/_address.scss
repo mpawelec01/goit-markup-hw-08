@@ -1,0 +1,21 @@
+.address {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+    padding-top: 20px;
+  }
+  &__name {
+    flex-wrap: wrap;
+    color: map-get($themeColors, "secondary");
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: map-get($themeColors, "contact-footer");
+    letter-spacing: 0.03em;
+  }
+}

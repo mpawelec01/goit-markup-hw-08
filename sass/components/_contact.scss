@@ -1,0 +1,30 @@
+.contact {
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+    color: map-get($themeColors, "project");
+    letter-spacing: 0.02em;
+  }
+  &__link--interaction:hover,
+  &__link--interaction:focus {
+    color: map-get($themeColors, "primary");
+    fill: map-get($themeColors, "primary");
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__svg {
+    margin-right: 10px;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}

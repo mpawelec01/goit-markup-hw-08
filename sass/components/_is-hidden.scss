@@ -1,0 +1,10 @@
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+  transition: visibility 1s;
+}
+.is-hidden .modal {
+  transform: scale(0);
+}

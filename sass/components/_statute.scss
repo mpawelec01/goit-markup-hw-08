@@ -1,0 +1,58 @@
+.statute {
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    position: absolute;
+    left: 55px;
+    top: 449px;
+  }
+
+  &__agree {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 14px;
+    height: 13px;
+  }
+  &__svg {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71px;
+    margin-top: 20px;
+    color: map-get($themeColors, "project");
+    padding-bottom: 30px;
+  }
+  &__link {
+    color: map-get($themeColors, "primary");
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+  }
+  &__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border: none;
+    color: map-get($themeColors, "secondary");
+    background-color: map-get($themeColors, "primary");
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px 76px 10px 76px;
+    margin-bottom: 40px;
+  }
+  &__input:checked + &__label svg {
+    fill: map-get($themeColors, "primary");
+  }
+  &__input:checked + &__label span {
+    background-color: map-get($themeColors, "primary");
+  }
+}

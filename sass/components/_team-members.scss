@@ -1,0 +1,64 @@
+.team {
+  background-color: #f5f4fa;
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    list-style: none;
+  }
+  &__item {
+    width: 270px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__box {
+    padding: 30px;
+  }
+  &__member {
+    font-size: 16px;
+    line-height: 1.19;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  &__area {
+    color: map-get($themeColors, "project");
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+  }
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 16px;
+    list-style: none;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    border-radius: 50%;
+    background-color: var(--interaction-color-2);
+    padding: 12px 12px;
+    fill: #afb1b8;
+  }
+
+  &__link:focus,
+  &__link:hover {
+    cursor: pointer;
+    background-color: map-get($themeColors, "primary");
+    fill: map-get($themeColors, "secondary");
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

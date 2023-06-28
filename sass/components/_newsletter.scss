@@ -1,0 +1,71 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 72px;
+  margin-left: 78px;
+  padding-bottom: 92px;
+  &__header {
+    color: map-get($themeColors, "secondary");
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    display: inline;
+    flex-wrap: wrap;
+  }
+
+  &__form {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+  &__input {
+    box-sizing: border-box;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: map-get($themeColors, "background");
+    margin-top: 20px;
+    color: map-get($themeColors, "secondary");
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    margin-right: 8px;
+  }
+  &__input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__button {
+    height: 50px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 28px;
+    border-radius: 4px;
+    background: map-get($themeColors, "primary");
+    color: map-get($themeColors, "secondary");
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-right: 24px;
+    padding-left: 42px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

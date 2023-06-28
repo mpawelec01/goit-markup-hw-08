@@ -1,0 +1,30 @@
+.advantages {
+  &__list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  &__item {
+    width: 270px;
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: map-get($themeColors, "filter");
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+  }
+  &__title {
+    line-height: 1.14;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  &__text {
+    color: map-get($themeColors, "project");
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    padding-top: 10px;
+  }
+}
