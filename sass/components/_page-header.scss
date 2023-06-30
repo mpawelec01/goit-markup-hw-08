@@ -1,10 +1,19 @@
 .header {
+  padding: 10px 0;
+
+  @include tablet {
+    padding: 21px 0;
+  }
+  @include desktop {
+    padding: 24px 0 25px;
+  }
+
   &__blocks {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding-right: 30px;
+    // padding-right: 30px;
   }
   &__menu {
     display: flex;
@@ -13,7 +22,20 @@
   }
   &__link {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    // padding-top: 24px;
+    // padding-bottom: 25px;
+  }
+  &__button {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__button:hover,
+  &__button:focus {
+    fill: map-get($themeColors, "primary");
   }
 }

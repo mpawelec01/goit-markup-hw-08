@@ -1,6 +1,12 @@
 .services {
+  display: none;
   margin-top: 0;
   padding-top: 0;
+
+  @include desktop {
+    display: flex;
+  }
+
   &__list {
     display: flex;
     justify-content: flex-start;

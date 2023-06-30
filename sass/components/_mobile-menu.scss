@@ -1,0 +1,96 @@
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container {
+  background-color: map-get($themeColors, "secondary");
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 250ms ease;
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+  }
+  &__close-btn:hover,
+  &__close-btn:focus {
+    fill: map-get($themeColors, "primary");
+  }
+
+  &__mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 40px;
+    margin-top: 48px;
+  }
+  &__mobile-menu a {
+    font-size: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: map-get($themeColors, "text");
+  }
+  &__link--position {
+    margin-bottom: 36px;
+  }
+
+  &__mobile-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap: 32px;
+  }
+  &__mobile-contact__mail {
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    color: map-get($themeColors, "project");
+  }
+  &__mobile-contact__tel {
+    font-size: 34px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.68px;
+    color: map-get($themeColors, "primary");
+  }
+
+  &__mobile-socials {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 64px;
+    gap: 10px;
+  }
+  &__mobile-socials a {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.36px;
+    color: map-get($themeColors, "primary");
+
+    @media (max-width: 420px) {
+      font-size: 12px;
+    }
+  }
+
+  &__mobile-menu a:hover,
+  &__mobile-menu a:focus {
+    color: map-get($themeColors, "primary");
+  }
+
+  &__mobile-socials span {
+    border-right: solid 1px rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+}

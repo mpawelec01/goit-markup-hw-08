@@ -1,11 +1,31 @@
 .footer {
+  // display: none;
   background-color: map-get($themeColors, "background");
   padding-bottom: 60px;
 
   &__blocks {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
   }
+  &__contact {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   &__link {
     display: flex;
     padding-top: 60px;

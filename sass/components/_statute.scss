@@ -1,12 +1,33 @@
 .statute {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__input {
     display: none;
+  }
+  &__accept {
+    // width: 100%;
+    // height: 100%;
+    // max-width: 370px;
+
+    padding-left: 50px;
+    padding-right: 40px;
+    @include desktop {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__label {
     position: absolute;
-    left: 55px;
-    top: 449px;
+    left: 40px;
+    top: 465px;
+
+    @include desktop {
+      left: 55px;
+      top: 440px;
+    }
   }
 
   &__agree {
@@ -21,14 +42,34 @@
     top: 3px;
     left: 3px;
   }
+  &__accept {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
   &__text {
-    font-size: 14px;
+    // max-width: 346px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.36px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 31px;
+
+    @include desktop {
+      font-size: 14px;
+      // max-width: 448px;
+    }
+
     line-height: 1.71px;
-    margin-top: 20px;
+
     color: map-get($themeColors, "project");
-    padding-bottom: 30px;
   }
   &__link {
+    font-size: 12px;
+    letter-spacing: 0.36px;
+    line-height: 1.71;
     color: map-get($themeColors, "primary");
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -36,6 +77,8 @@
     text-decoration-thickness: 1px;
   }
   &__button {
+    max-width: 200px;
+    max-height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;

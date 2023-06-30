@@ -1,5 +1,7 @@
 @import "./utils/variables.scss";
+@import "./utils/mixins";
 @import "./utils/commons";
+
 @import "./components/page-header";
 @import "./components/customers";
 @import "./components/page-footer";
@@ -20,3 +22,4 @@
 @import "./components/backdrop";
 @import "./components/is-hidden";
 @import "./components/statute";
+@import "./components/mobile-menu";

@@ -1,16 +1,41 @@
 .address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include desktop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 246px;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 9px;
     padding-top: 20px;
+
+    @include desktop {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
   }
   &__name {
     flex-wrap: wrap;
+    width: 246px;
     color: map-get($themeColors, "secondary");
     line-height: 1.71;
     letter-spacing: 0.03em;
+    @include desktop {
+      flex-wrap: nowrap;
+    }
   }
   &__link {
     font-size: 14px;

@@ -1,18 +1,40 @@
 .team {
+  // display: none;
   background-color: #f5f4fa;
   &__list {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
     list-style: none;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
   }
   &__item {
-    width: 270px;
+    max-width: 450px;
+    max-height: 622px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @include tablet {
+      max-width: 354px;
+      max-height: 536px;
+    }
+    @include desktop {
+      max-width: 270px;
+      max-height: 428px;
+    }
   }
   &__box {
     padding: 30px;
@@ -39,6 +61,7 @@
   &__socials {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 10px;
     padding-top: 16px;
     list-style: none;

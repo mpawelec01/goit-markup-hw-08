@@ -1,4 +1,11 @@
 .logo {
+  display: flex;
+  justify-content: center;
+
+  @include desktop {
+    justify-content: flex-start;
+  }
+
   &__footer {
     color: map-get($themeColors, "secondary");
     font-family: "Raleway";

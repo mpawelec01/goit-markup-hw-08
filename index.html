@@ -35,6 +35,7 @@
             ><span class="logo__header logo__header--first-part">Web</span
             ><span class="logo__header">Studio</span></a
           >
+
           <nav>
             <ul class="menu__list">
               <li class="menu__item">
@@ -63,6 +64,16 @@
             </ul>
           </nav>
         </div>
+        <button
+          type="button"
+          class="header__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toogle__button" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
         <div class="header__contact contact">
           <ul class="contact__list">
             <li class="contact__item">
@@ -99,8 +110,7 @@
       <section class="banner no-padding-bottom">
         <div class="container banner__space">
           <h1 class="banner__header">
-            EFEKTYWNE ROZWIĄZANIA <br />
-            DLA WASZEGO BIZNESU
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
           <button class="banner__button" type="button" data-modal-open>
             Zamów usługę
@@ -188,15 +198,18 @@
                       ></use>
                     </svg>
                   </label>
+                  <div class="statute__accept">
+                    <span class="statute__text"
+                      >Oświadczam iż akceptuję
+                      <a class="statute__link" href="#">Regulamin</a> i
+                      <a class="statute__link" href="#"
+                        >Politykę Prywatności.</a
+                      ></span
+                    >
+                  </div>
                 </div>
-                <p class="statute__text">
-                  Oświadczam iż akceptuję
-                  <a class="statute__link" href="#">Regulamin</a
-                  ><span class="statute__text"> i </span
-                  ><a class="statute__link" href="#">Politykę Prywatności.</a>
-                </p>
+                <button class="statute__button" type="submit">Wyślij</button>
               </div>
-              <button class="statute__button" type="submit">Wyślij</button>
             </form>
           </div>
         </div>
@@ -264,8 +277,11 @@
                 class="services__image"
                 src="images/code.jpg"
                 alt="code_image"
-                width="370"
-                height="294"
+                srcset="
+                  images/services/codeDesktop@1x.jpg 270w,
+                  images/services/codeDesktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, 100vw"
               />
               <div class="services__box">
                 <p class="services__title">DESKTOP APPS</p>
@@ -276,8 +292,11 @@
                 class="services__image"
                 src="images/develop.jpg"
                 alt="develop_image"
-                width="370"
-                height="294"
+                srcset="
+                  images/services/developDesktop@1x.jpg 270w,
+                  images/services/developDesktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, 100vw"
               />
               <div class="services__box">
                 <p class="services__title">MOBILE APPS</p>
@@ -288,8 +307,11 @@
                 class="services__image"
                 src="images/design.jpg"
                 alt="design_image"
-                width="370"
-                height="294"
+                srcset="
+                  images/services/designDesktop@1x.jpg 270w,
+                  images/services/designDesktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, 100vw"
               />
               <div class="services__box">
                 <p class="services__title">DESIGN SOLUTIONS</p>
@@ -307,8 +329,15 @@
                 <img
                   src="images/productdesigner.jpg"
                   alt="productdesigner_photo"
-                  width="270"
-                  height="260"
+                  srcset="
+                    images/team/productMobile@1x.jpg  450w,
+                    images/team/productMobile@2x.jpg  900w,
+                    images/team/productTablet@1x.jpg  354w,
+                    images/team/productTablet@2x.jpg  708w,
+                    images/team/productDesktop@1x.jpg 270w,
+                    images/team/productDesktop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <div class="team__box">
                   <span class="team__member">John Doe</span>
@@ -367,8 +396,15 @@
                 <img
                   src="images/frontenddeveloper.jpg"
                   alt="frontenddeveloper_photo"
-                  width="270"
-                  height="260"
+                  srcset="
+                    images/team/frontendMobile@1x.jpg  450w,
+                    images/team/frontendMobile@2x.jpg  900w,
+                    images/team/frontendTablet@1x.jpg  354w,
+                    images/team/frontendTablet@2x.jpg  708w,
+                    images/team/frontendDesktop@1x.jpg 270w,
+                    images/team/frontendDesktop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <div class="team__box">
                   <span class="team__member">John Doe</span>
@@ -427,8 +463,15 @@
                 <img
                   src="images/marketing.jpg"
                   alt="marketing_photo"
-                  width="270"
-                  height="260"
+                  srcset="
+                    images/team/marketingMobile@1x.jpg  450w,
+                    images/team/marketingMobile@2x.jpg  900w,
+                    images/team/marketingTablet@1x.jpg  354w,
+                    images/team/marketingTablet@2x.jpg  708w,
+                    images/team/marketingDesktop@1x.jpg 270w,
+                    images/team/marketingDesktop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <div class="team__box">
                   <span class="team__member">John Doe</span>
@@ -487,8 +530,15 @@
                 <img
                   src="images/uidesigner.jpg"
                   alt="uidesigner_photo"
-                  width="270"
-                  height="260"
+                  srcset="
+                    images/team/uidesignMobile@1x.jpg  450w,
+                    images/team/uidesignMobile@2x.jpg  900w,
+                    images/team/uidesignTablet@1x.jpg  354w,
+                    images/team/uidesignTablet@2x.jpg  708w,
+                    images/team/uidesignDesktop@1x.jpg 270w,
+                    images/team/uidesignDesktop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <div class="team__box">
                   <span class="team__member">John Doe</span>
@@ -615,86 +665,90 @@
     </main>
     <footer class="footer">
       <div class="container footer__blocks">
-        <div class="footer__data address">
-          <address>
-            <a class="footer__link logo" href="./index.html"
-              ><span class="logo__footer logo__footer--first-part">Web</span
-              ><span class="logo__footer">Studio</span></a
-            >
-            <ul class="address__list">
-              <li class="address__item">
-                <p class="address__name">m. Warszawa, Aleje Jerozolimskie 21</p>
+        <div class="footer__contact">
+          <div class="footer__data address">
+            <address>
+              <a class="footer__link logo" href="./index.html"
+                ><span class="logo__footer logo__footer--first-part">Web</span
+                ><span class="logo__footer">Studio</span></a
+              >
+              <ul class="address__list">
+                <li class="address__item">
+                  <p class="address__name">
+                    m. Warszawa, Aleje Jerozolimskie 21
+                  </p>
+                </li>
+                <li>
+                  <a
+                    class="address__link address__link--interaction"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--interaction"
+                    href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="socials">
+            <p class="socials__header">DOŁĄCZ DO NAS</p>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg width="20" height="20">
+                    <use
+                      class="socials__icon"
+                      width="20"
+                      height="20"
+                      fill="#fff"
+                      href="./images/icons.svg#icon-instagram-2"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a
-                  class="address__link address__link--interaction"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg width="20" height="20">
+                    <use
+                      width="20"
+                      height="20"
+                      fill="#fff"
+                      href="./images/icons.svg#icon-twitter-1"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a
-                  class="address__link address__link--interaction"
-                  href="tel:+48111111111"
-                  >+48 111 111 111</a
-                >
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg width="20" height="20">
+                    <use
+                      width="20"
+                      height="20"
+                      fill="#fff"
+                      href="./images/icons.svg#icon-facebook-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg width="20" height="20">
+                    <use
+                      width="20"
+                      height="20"
+                      fill="#fff"
+                      href="./images/icons.svg#icon-linkedin-1"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="socials">
-          <p class="socials__header">DOŁĄCZ DO NAS</p>
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link" href="#">
-                <svg width="20" height="20">
-                  <use
-                    class="socials__icon"
-                    width="20"
-                    height="20"
-                    fill="#fff"
-                    href="./images/icons.svg#icon-instagram-2"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#">
-                <svg width="20" height="20">
-                  <use
-                    width="20"
-                    height="20"
-                    fill="#fff"
-                    href="./images/icons.svg#icon-twitter-1"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#">
-                <svg width="20" height="20">
-                  <use
-                    width="20"
-                    height="20"
-                    fill="#fff"
-                    href="./images/icons.svg#icon-facebook-1"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#">
-                <svg width="20" height="20">
-                  <use
-                    width="20"
-                    height="20"
-                    fill="#fff"
-                    href="./images/icons.svg#icon-linkedin-1"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="newsletter">
           <p class="newsletter__header">ZAPISZ SIĘ DO NEWSLETTERA</p>
@@ -714,7 +768,7 @@
               <div class="newsletter__submit">
                 <button class="newsletter__button" type="submit">
                   <span class="newsletter__text">Zapisz się</span>
-                  <svg width="24" height="24">
+                  <svg class="newsletter__svg" width="24" height="24">
                     <use
                       width="24"
                       height="24"
@@ -729,6 +783,71 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-container__close-btn js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <ul class="menu-container__mobile-menu mobile-menu">
+        <li class="mobile-menu__item">
+          <a
+            href="index.html"
+            class="mobile-menu__link mobile-menu__link--position"
+            >Agencja</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link">Kontakt</a>
+        </li>
+      </ul>
+      <div>
+        <ul class="menu-container__mobile-contact">
+          <li class="mobile-contact__item">
+            <a
+              class="menu-container__mobile-contact__tel"
+              href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="mobile-contact__item">
+            <a
+              class="menu-container__mobile-contact__mail"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-container__mobile-socials">
+          <li class="menu-container__mobile-socials__item">
+            <a href="" class="menu-container__mobile-socials__link">Instagram</a
+            ><span></span>
+          </li>
+          <li class="menu-container__mobile-socials__item">
+            <a href="" class="menu-container__mobile-socials__link">Twitter</a
+            ><span></span>
+          </li>
+          <li class="menu-container__mobile-socials__item">
+            <a href="" class="menu-container__mobile-socials__link">Facebook</a
+            ><span></span>
+          </li>
+          <li class="menu-container__mobile-socials__item">
+            <a href="" class="menu-container__mobile-socials__link">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

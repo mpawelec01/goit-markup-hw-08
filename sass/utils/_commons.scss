@@ -12,6 +12,8 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 a {
@@ -35,13 +37,19 @@ header {
 }
 
 h1 {
+  font-size: 26px;
   color: #fff;
-  font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   padding-bottom: 30px;
+  max-width: 365px;
+
+  @include desktop {
+    font-size: 44px;
+    max-width: 696px;
+  }
 }
 
 h2 {
@@ -60,9 +68,18 @@ p {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 480px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 
 .section {
