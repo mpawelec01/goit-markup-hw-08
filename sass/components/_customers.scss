@@ -16,7 +16,8 @@
   &__link {
     border-radius: 4px;
     border: 1px solid #afb1b8;
-    max-width: calc(100vw / 2 - 30px);
+    width: calc(100vw / 2 - 30px);
+    max-width: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
